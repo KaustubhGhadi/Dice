@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context=".AlarmActivity">
+
+    <LinearLayout
+        android:id="@+id/alarmhead_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/back_iv"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@color/colorWhite"
+            android:padding="15dp"
+            android:src="@drawable/ic_arrow_back_black_24dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Sync Schedule"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:layout_marginRight="50dp"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/alarmhead_ll">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight=".3">
+            <TimePicker
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/alarmTimePicker" />
+
+            <LinearLayout
+                android:id="@+id/alarmToggle_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/alarmTimePicker">
+
+                <TextView
+                    android:id="@+id/textalarm_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Enable"
+                    android:gravity="left"
+                    android:padding="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight=".15"/>
+
+                <ToggleButton
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:textOff=""
+                    android:textOn=""
+                    android:id="@+id/alarmToggle"
+                    android:layout_gravity="right"
+                    android:background="@drawable/btntoggle_selector"
+                    android:onClick="onToggleClicked"
+                    android:layout_weight=".9"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text=""
+                android:id="@+id/alarmText"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/alarmToggle_ll" />
+        </LinearLayout>
+        <!--<LinearLayout-->
+            <!--android:orientation="vertical"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:padding="10dp"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:layout_weight=".7">-->
+
+            <!--<TextView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="Sync History"-->
+                <!--android:gravity="center"/>-->
+
+            <!--<View-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="2dp"-->
+                <!--android:layout_marginTop="5dp"-->
+                <!--android:background="@color/colorDarkGrey"-->
+                <!--/>-->
+
+            <!--<LinearLayout-->
+                <!--android:orientation="horizontal"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="10dp">-->
+                <!--<TextView-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:text="1 Oct 2018"-->
+                    <!--android:textColor="@color/colorDarkGrey"-->
+                    <!--android:layout_weight=".33"/>-->
+                <!--<TextView-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:text="11:55 PM"-->
+                    <!--android:textColor="@color/colorDarkGrey"-->
+                    <!--android:layout_weight=".33"/>-->
+                <!--<TextView-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:text="Sync Successfully"-->
+                    <!--android:textColor="@color/colorDarkGrey"-->
+                    <!--android:layout_weight=".33"/>-->
+            <!--</LinearLayout>-->
+            <!--<LinearLayout-->
+                <!--android:orientation="horizontal"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="10dp">-->
+                <!--<TextView-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:text="3 Oct 2018"-->
+                    <!--android:textColor="@color/colorDarkGrey"-->
+                    <!--android:layout_weight=".33"/>-->
+                <!--<TextView-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:text="11:55 PM"-->
+                    <!--android:textColor="@color/colorDarkGrey"-->
+                    <!--android:layout_weight=".33"/>-->
+                <!--<TextView-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:text="Sync Successfully"-->
+                    <!--android:textColor="@color/colorDarkGrey"-->
+                    <!--android:layout_weight=".33"/>-->
+            <!--</LinearLayout>-->
+            <!--<LinearLayout-->
+                <!--android:orientation="horizontal"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="10dp">-->
+                <!--<TextView-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:text="9 Oct 2018"-->
+                    <!--android:textColor="@color/colorDarkGrey"-->
+                    <!--android:layout_weight=".33"/>-->
+                <!--<TextView-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:text="11:55 PM"-->
+                    <!--android:textColor="@color/colorDarkGrey"-->
+                    <!--android:layout_weight=".33"/>-->
+                <!--<TextView-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:text="Sync Successfully"-->
+                    <!--android:textColor="@color/colorDarkGrey"-->
+                    <!--android:layout_weight=".33"/>-->
+            <!--</LinearLayout>-->
+
+        <!--</LinearLayout>-->
+    </LinearLayout>
+
+</RelativeLayout>

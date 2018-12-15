@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Theme.AppCompat.NoActionBar"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/main_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/top_head_rl"
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+            <ImageView
+                android:id="@+id/back_iv"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@color/colorWhite"
+                android:padding="15dp"
+                android:src="@drawable/ic_arrow_back_black_24dp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="15dp">
+
+                <TextView
+                    android:id="@+id/title_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Schedule"
+                    android:textStyle="bold"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorDarkGrey"
+                    android:textSize="21sp" />
+
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="40px"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:padding="15px"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/right_arm_vg"
+                android:layout_width="0dp"
+                android:paddingEnd="10dp"
+                android:paddingRight="10dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/dice1"
+                    android:background="@color/colorLightGrey"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorWhite"
+                    android:textStyle="bold"
+                    android:padding="4dp"
+                    android:background="@color/colorGlatyOrange"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:text="MON"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/left_arm_vg"
+                android:layout_width="0dp"
+                android:paddingStart="10dp"
+                android:paddingLeft="10dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/dice2"
+                    android:background="@color/colorLightGrey"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorWhite"
+                    android:textStyle="bold"
+                    android:padding="4dp"
+                    android:background="@color/colorGlatyYellow"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:text="TUE"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:padding="15px"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/right_thigh_vg"
+                android:layout_width="0dp"
+                android:paddingEnd="10dp"
+                android:paddingRight="10dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/dice3"
+                    android:background="@color/colorLightGrey"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorWhite"
+                    android:textStyle="bold"
+                    android:padding="4dp"
+                    android:background="@color/colorGlatyRed"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:text="WED"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/left_thigh_vg"
+                android:layout_width="0dp"
+                android:paddingStart="10dp"
+                android:paddingLeft="10dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/dice4"
+                    android:background="@color/colorLightGrey"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorWhite"
+                    android:textStyle="bold"
+                    android:padding="4dp"
+                    android:background="@color/colorGlatyPurple"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:text="THU"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:padding="15px"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/left_butt_vg"
+                android:layout_width="0dp"
+                android:paddingEnd="10dp"
+                android:paddingRight="10dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/dice5"
+                    android:background="@color/colorLightGrey"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorWhite"
+                    android:textStyle="bold"
+                    android:padding="4dp"
+                    android:background="@color/colorGlatyGreen"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:text="FRI"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/right_butt_vg"
+                android:layout_width="0dp"
+                android:paddingStart="10dp"
+                android:paddingLeft="10dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/dice6"
+                    android:background="@color/colorLightGrey"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorWhite"
+                    android:textStyle="bold"
+                    android:padding="4dp"
+                    android:background="@color/colorGlatyBlue"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:text="SAT"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="0dp"-->
+            <!--android:padding="15px"-->
+            <!--android:layout_weight="1"-->
+            <!--android:orientation="horizontal">-->
+
+            <!--<RelativeLayout-->
+                <!--android:id="@+id/stomach_vg"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:paddingEnd="10dp"-->
+                <!--android:paddingRight="10dp"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_weight="1">-->
+
+                <!--<ImageView-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:src="@drawable/area_stomach"-->
+                    <!--android:background="@color/colorLightGrey"/>-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:textAllCaps="true"-->
+                    <!--android:textColor="@color/colorWhite"-->
+                    <!--android:textStyle="bold"-->
+                    <!--android:padding="4dp"-->
+                    <!--android:background="@color/colorGlatyBrown"-->
+                    <!--android:layout_alignParentTop="true"-->
+                    <!--android:layout_alignParentLeft="true"-->
+                    <!--android:text="SUN"/>-->
+            <!--</RelativeLayout>-->
+
+            <!--<RelativeLayout-->
+                <!--android:visibility="invisible"-->
+                <!--android:id="@+id/blank_vg"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:paddingStart="10dp"-->
+                <!--android:paddingLeft="10dp"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_weight="1">-->
+
+                <!--<ImageView-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:background="@color/colorLightGrey" />-->
+
+                <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:textAllCaps="true"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:textColor="@color/colorWhite"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:textStyle="bold"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:padding="4dp"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:background="@color/colorGlatyBlue"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_alignParentBottom="true"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_alignParentStart="true"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:text="5 SHOTS"/>&ndash;&gt;-->
+
+                <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:textAllCaps="true"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:textColor="@color/colorWhite"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:textStyle="bold"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:padding="4dp"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:background="@color/colorGlatyBlue"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_alignParentBottom="true"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_alignParentEnd="true"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:text="10%"/>&ndash;&gt;-->
+            <!--</RelativeLayout>-->
+
+        <!--</LinearLayout>-->
+
+    </LinearLayout>
+
+
+</LinearLayout>
